@@ -1,6 +1,6 @@
 import React from 'react'
 import axios from 'axios'
-
+import { Link } from 'react-router-dom'
 class AlbumsShow extends React.Component {
   constructor(props) {
     super(props)
@@ -26,9 +26,16 @@ class AlbumsShow extends React.Component {
           <hr />
           <div className="columns">
             <div className="column is-half-desktop is-full-tablet is-full-mobile">
-              <figure className="image">
-                <img src={this.state.album.cover_medium} alt={this.state.album.title} />
-              </figure>
+              <Link to={{
+                pathname: `/albums/${this.state.album.id}/tracklist`,
+                state: {
+                  cover: [this.state.album.cover]
+                }
+              }}>
+                <figure className="image">
+                  <img src={this.state.album.cover} alt={this.state.album.title} />
+                </figure>
+              </Link>
             </div>
             <div className="column is-half-desktop is-full-tablet is-full-mobile">
               <h2 className="title is-4">Artist: {this.state.album.artist.name}</h2>
