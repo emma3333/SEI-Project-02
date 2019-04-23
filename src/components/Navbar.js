@@ -6,7 +6,7 @@ const Navbar = () => {
     <nav className="navbar is-light">
       <div className="container">
         <div className="navbar-brand">
-          <Link to="/" className="navbar-item">Music</Link>
+          <Link to="/" className="navbar-item">Home</Link>
 
           <a role="button" className="navbar-burger">
             <span aria-hidden="true"></span>
@@ -18,7 +18,7 @@ const Navbar = () => {
 
         <div className="navbar-menu">
           <div className="navbar-start">
-            <Link to="/" className="navbar-item">Link to music</Link>
+            <Link to="/albums" className="navbar-item">Albums</Link>
           </div>
 
           <div className="navbar-end">

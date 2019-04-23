@@ -2,31 +2,30 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 
-class ArtistShow extends React.Component {
+class AlbumsIndex extends React.Component {
   constructor(){
     super()
 
     this.state = {
-      artists: []
+      albums: []
     }
   }
 
   componentDidMount(){
-    axios.get('https://cors-anywhere.herokuapp.com/api.deezer.com/search?q=coldplay')
-      .then(res => this.setState({ artists: res.data.data }))
+    axios.get('https://cors-anywhere.herokuapp.com/api.deezer.com/search/album?q=coldplay')
+      .then(res => this.setState({ albums: res.data.data }))
   }
   render() {
-    console.log(this.state.artists)
     return(
       <section className="section">
         <div className="container">
           <h1 className="title is-1">Coldplay</h1>
           <div className="columns is-multiline">
-            {this.state.artists.map(artist =>
-              <div key={artist.id} className="column is-one-quarter-desktop is-one-third-tablet">
-                <h1>{artist.title}</h1>
+            {this.state.albums.map(album =>
+              <div key={album.id} className="column is-one-quarter-desktop is-one-third-tablet">
+                <h1>{album.title}</h1>
                 <figure className="image">
-                  <img src={artist.album.cover} alt={artist.artist.name} />
+                  <img src={album.cover} alt={album.name} />
                 </figure>
               </div>
             )}
@@ -38,4 +37,4 @@ class ArtistShow extends React.Component {
   }
 }
 
-export default ArtistShow
+export default AlbumsIndex
