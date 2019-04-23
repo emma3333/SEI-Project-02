@@ -7,7 +7,7 @@ import React from 'react'
 //   this.state = {}
 // }
 
-const Tracklist = ({cover}) => {
+const Tracklist = (props) => {
 
   return(
     <section className="section">
@@ -17,7 +17,7 @@ const Tracklist = ({cover}) => {
         <div className="columns">
           <div className="column is-half-desktop is-full-tablet is-full-mobile">
             <figure className="image">
-              <img src={cover} alt="title" />
+              <img src={props.location.state.cover} alt="title" />
             </figure>
           </div>
           <div className="column is-half-desktop is-full-tablet is-full-mobile">
