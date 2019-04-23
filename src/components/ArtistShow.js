@@ -24,6 +24,9 @@ class ArtistShow extends React.Component {
             {this.state.artists.map(artist =>
               <div key={artist.id} className="column is-one-quarter-desktop is-one-third-tablet">
                 <h1>{artist.title}</h1>
+                <figure className="image">
+                  <img src={artist.album.cover} alt={artist.artist.name} />
+                </figure>
               </div>
             )}
           </div>
