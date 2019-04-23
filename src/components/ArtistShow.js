@@ -7,7 +7,7 @@ class ArtistShow extends React.Component {
     super()
 
     this.state = {
-      artists: null
+      artists: []
     }
   }
 
@@ -18,7 +18,18 @@ class ArtistShow extends React.Component {
   render() {
     console.log(this.state.artists)
     return(
-      <div></div>
+      <section className="section">
+        <div className="container">
+          <div className="columns is-multiline">
+            {this.state.artists.map(artist =>
+              <div key={artist.id} className="column is-one-quarter-desktop is-one-third-tablet">
+                <h1>{artist.title}</h1>
+              </div>
+            )}
+          </div>
+        </div>
+      </section>
+
     )
   }
 }
