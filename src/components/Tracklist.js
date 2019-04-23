@@ -8,11 +8,11 @@ import React from 'react'
 // }
 
 const Tracklist = (props) => {
-
+  console.log(props.location)
   return(
     <section className="section">
       <div className="container">
-        <h1 className="title is-1">title</h1>
+        <h1 className="title is-1">{props.location.state.title}</h1>
         <hr />
         <div className="columns">
           <div className="column is-half-desktop is-full-tablet is-full-mobile">
@@ -21,7 +21,10 @@ const Tracklist = (props) => {
             </figure>
           </div>
           <div className="column is-half-desktop is-full-tablet is-full-mobile">
-            <p>info</p>
+            <ul>
+              {props.location.state.tracks.map(track =>
+                <li key={track.title}>{track.title}</li>)}
+            </ul>
           </div>
         </div>
       </div>

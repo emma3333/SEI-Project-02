@@ -29,7 +29,9 @@ class AlbumsShow extends React.Component {
               <Link to={{
                 pathname: `/albums/${this.state.album.id}/tracklist`,
                 state: {
-                  cover: [this.state.album.cover]
+                  cover: [this.state.album.cover],
+                  title: [this.state.album.title],
+                  tracks: [this.state.album.tracks.data]
                 }
               }}>
                 <figure className="image">

@@ -11,10 +11,10 @@ class AlbumsIndex extends React.Component {
     }
   }
 
-  componentDidMount(){
+  getData() {
     axios.get('https://cors-anywhere.herokuapp.com/api.deezer.com/search/album', {
       params: {
-        q: this.props.match.params.artist
+        q: this.props.match.params.query
       }
     })
       .then(res => {
@@ -23,17 +23,13 @@ class AlbumsIndex extends React.Component {
       })
   }
 
+  componentDidMount(){
+    this.getData()
+  }
+
   componentDidUpdate(prevProps) {
     if(prevProps.location.pathname !== this.props.location.pathname) {
-      axios.get('https://cors-anywhere.herokuapp.com/api.deezer.com/search/album', {
-        params: {
-          q: this.props.match.params.artist
-        }
-      })
-        .then(res => {
-          console.log(res.data)
-          this.setState({ albums: res.data.data })
-        })
+      this.getData()
     }
   }
 
@@ -43,12 +39,12 @@ class AlbumsIndex extends React.Component {
     return(
       <section className="section">
         <div className="container">
-          <h1 className="title is-1">{this.state.albums[0].artist.name}</h1>
           <div className="columns is-multiline">
             {this.state.albums.map(album =>
               <div key={album.id} className="column is-one-quarter-desktop is-one-third-tablet">
                 <Link to={`/albums/${album.id}`}>
-                  <h1>{album.title}</h1>
+                  <h1 className="title is-4">{album.title}</h1>
+                  <h2 className="subtitle is-5">{album.artist.name}</h2>
                   <figure className="image">
                     <img src={album.cover} alt={album.name} />
                   </figure>
