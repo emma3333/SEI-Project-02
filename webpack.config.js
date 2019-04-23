@@ -17,6 +17,7 @@ module.exports = {
     filename: 'app.js',
     publicPath: '/'
   },
+  devtool: 'source-map',
   module: {
     rules: [
       { test: /\.jsx?$/, loader: 'babel-loader', exclude: /node_modules/ },
