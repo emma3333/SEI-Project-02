@@ -16,6 +16,7 @@ class AlbumsShow extends React.Component {
       .then(res => this.setState({ album: res.data }))
   }
 
+
   render() {
     if(!this.state.album) return null
     return (

@@ -22,6 +22,22 @@ class AlbumsIndex extends React.Component {
         this.setState({ albums: res.data.data })
       })
   }
+
+  componentDidUpdate(prevProps) {
+    if(prevProps.location.pathname !== this.props.location.pathname) {
+      axios.get('https://cors-anywhere.herokuapp.com/api.deezer.com/search/album', {
+        params: {
+          q: this.props.match.params.artist
+        }
+      })
+        .then(res => {
+          console.log(res.data)
+          this.setState({ albums: res.data.data })
+        })
+    }
+  }
+
+
   render() {
     if(!this.state.albums) return null
     return(
