@@ -3,23 +3,31 @@ import { Link } from 'react-router-dom'
 import axios from 'axios'
 
 class AlbumsIndex extends React.Component {
-  constructor(){
-    super()
+  constructor(props){
+    super(props)
 
     this.state = {
-      albums: []
+      albums: null
     }
   }
 
   componentDidMount(){
-    axios.get('https://cors-anywhere.herokuapp.com/api.deezer.com/search/album?q=coldplay')
-      .then(res => this.setState({ albums: res.data.data }))
+    axios.get('https://cors-anywhere.herokuapp.com/api.deezer.com/search/album', {
+      params: {
+        q: this.props.match.params.artist
+      }
+    })
+      .then(res => {
+        console.log(res.data)
+        this.setState({ albums: res.data.data })
+      })
   }
   render() {
+    if(!this.state.albums) return null
     return(
       <section className="section">
         <div className="container">
-          <h1 className="title is-1">Coldplay</h1>
+          <h1 className="title is-1">{this.state.albums[0].artist.name}</h1>
           <div className="columns is-multiline">
             {this.state.albums.map(album =>
               <div key={album.id} className="column is-one-quarter-desktop is-one-third-tablet">

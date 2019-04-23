@@ -16,8 +16,8 @@ class App extends React.Component {
         <main>
           <Navbar />
           <Switch>
+            <Route path="/albums/search/:artist" component={AlbumsIndex} />
             <Route path="/albums/:id" component={AlbumsShow} />
-            <Route path="/albums" component={AlbumsIndex} />
             <Route path="/" component={Home} />
           </Switch>
         </main>

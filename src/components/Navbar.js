@@ -3,21 +3,25 @@ import { Link, withRouter } from 'react-router-dom'
 
 class Navbar extends React.Component {
 
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
 
     this.state = {
       data: {}
     }
-    this.handleSearch =this.handleSearch.bind(this)
+    this.handleSearch = this.handleSearch.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
   }
 
   handleSearch(e) {
-    const data=[e.target.value]
-    this.setState({ data })
-    console.log(this.state.data)
+    this.setState({ data: e.target.value })
   }
 
+  handleSubmit(e) {
+    e.preventDefault()
+
+    this.props.history.push(`/albums/search/${this.state.data}`)
+  }
 
 
   render() {
@@ -43,15 +47,15 @@ class Navbar extends React.Component {
             <div className="navbar-end">
               <div className="navbar-item">
 
-                <form>
+                <form onSubmit={this.handleSubmit}>
                   <div className="field has-addons">
                     <div className="control">
                       <input className="input" type="search" onChange={this.handleSearch} placeholder="Artist Name..." />
                     </div>
                     <div className="control">
-                      <a className="button is-info">
+                      <button className="button is-info">
                       Search
-                      </a>
+                      </button>
                     </div>
                   </div>
                 </form>
