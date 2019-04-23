@@ -5,6 +5,7 @@ import { HashRouter as Router, Route, Switch } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Home from './components/Home'
 import AlbumsIndex from './components/AlbumsIndex'
+import AlbumsShow from './components/AlbumsShow'
 
 import 'bulma'
 
@@ -15,6 +16,7 @@ class App extends React.Component {
         <main>
           <Navbar />
           <Switch>
+            <Route path="/albums/:id" component={AlbumsShow} />
             <Route path="/albums" component={AlbumsIndex} />
             <Route path="/" component={Home} />
           </Switch>

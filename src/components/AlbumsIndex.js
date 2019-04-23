@@ -23,10 +23,12 @@ class AlbumsIndex extends React.Component {
           <div className="columns is-multiline">
             {this.state.albums.map(album =>
               <div key={album.id} className="column is-one-quarter-desktop is-one-third-tablet">
-                <h1>{album.title}</h1>
-                <figure className="image">
-                  <img src={album.cover} alt={album.name} />
-                </figure>
+                <Link to={`/albums/${album.id}`}>
+                  <h1>{album.title}</h1>
+                  <figure className="image">
+                    <img src={album.cover} alt={album.name} />
+                  </figure>
+                </Link>
               </div>
             )}
           </div>
