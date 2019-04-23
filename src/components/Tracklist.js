@@ -8,7 +8,7 @@ import React from 'react'
 // }
 
 const Tracklist = (props) => {
-  console.log(props.location)
+  console.log(props.location.state.tracks)
   return(
     <section className="section">
       <div className="container">
@@ -22,8 +22,9 @@ const Tracklist = (props) => {
           </div>
           <div className="column is-half-desktop is-full-tablet is-full-mobile">
             <ul>
-              {props.location.state.tracks.map(track =>
-                <li key={track.title}>{track.title}</li>)}
+
+              {props.location.state.tracks[0].map(track =>
+                <li key={track.id}>{track.title}</li>)}
             </ul>
           </div>
         </div>
@@ -34,3 +35,5 @@ const Tracklist = (props) => {
 }
 
 export default Tracklist
+
+// <li key={track.title}>{track.title}</li>)
