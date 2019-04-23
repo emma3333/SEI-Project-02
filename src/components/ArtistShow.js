@@ -20,6 +20,7 @@ class ArtistShow extends React.Component {
     return(
       <section className="section">
         <div className="container">
+          <h1 className="title is-1">Coldplay</h1>
           <div className="columns is-multiline">
             {this.state.artists.map(artist =>
               <div key={artist.id} className="column is-one-quarter-desktop is-one-third-tablet">
