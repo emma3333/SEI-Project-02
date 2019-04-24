@@ -9,6 +9,7 @@ import AlbumsShow from './components/AlbumsShow'
 import Tracklist from './components/Tracklist'
 
 import 'bulma'
+import './style.scss'
 
 class App extends React.Component {
   render() {

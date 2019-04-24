@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, withRouter } from 'react-router-dom'
 
+
 class Navbar extends React.Component {
 
   constructor(props) {
@@ -26,10 +27,9 @@ class Navbar extends React.Component {
 
   render() {
     return (
-      <nav className="navbar is-light">
+      <nav className="navbar is-dark">
         <div className="container">
           <div className="navbar-brand">
-            <Link to="/" className="navbar-item">Home</Link>
 
             <a role="button" className="navbar-burger">
               <span aria-hidden="true"></span>
@@ -41,25 +41,28 @@ class Navbar extends React.Component {
 
           <div className="navbar-menu">
             <div className="navbar-start">
-            </div>
+              <Link to="/" className="navbar-item">Home</Link>
 
-            <div className="navbar-end">
               <div className="navbar-item">
 
                 <form onSubmit={this.handleSubmit}>
                   <div className="field has-addons">
                     <div className="control">
-                      <input className="input" type="search" onChange={this.handleSearch} placeholder="Artist Name..." />
+                      <input className="input is-small" type="search" onChange={this.handleSearch} placeholder="Artist Name..." />
                     </div>
                     <div className="control">
-                      <button className="button is-info">
-                      Search
+                      <button className="button is-light is-small is-outlined">
+                    Search
                       </button>
                     </div>
                   </div>
                 </form>
 
               </div>
+            </div>
+
+            <div className="navbar-end">
+              <div className="navbar-item" id="logo"></div>
             </div>
           </div>
         </div>

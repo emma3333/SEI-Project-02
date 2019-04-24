@@ -46,7 +46,7 @@ class AlbumsIndex extends React.Component {
                   <h1 className="title is-4">{album.title}</h1>
                   <h2 className="subtitle is-5">{album.artist.name}</h2>
                   <figure className="image">
-                    <img src={album.cover} alt={album.name} />
+                    <img src={album.cover_medium} alt={album.name} />
                   </figure>
                 </Link>
               </div>

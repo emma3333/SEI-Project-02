@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+$background-color: #ffffff;
+$subtitle-color: #40b4e6;
+$hr-color: #d72c88;
+$hero-color: #ffffff;
+$home-color: #bbd9ea;
+$font-stack: Roboto, sans-serif;
+
+
+body {
+  background-color: $background-color;
+  min-height: 100vh;
+  //
+  // #home {
+  //   background-color: $hero-color;
+  //   height: 300px;
+  //   border-bottom: 2px solid $hr-color;
+  // }
+
+
+  img {
+    border-radius: 3px;
+  }
+
+  .headingtitle {
+    letter-spacing: 3px;
+    color: $subtitle-color;
+  }
+
+  .subtitle {
+    letter-spacing: 5px;
+  }
+
+  li {
+    margin: 0 0 10px 20px;
+    font-size: 20px;
+  }
+
+  #logo {
+      background-image: url('/src/assets/Deezerlogo.png');
+      background-size: contain;
+      width: 220px;
+      height: 30px;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-top: 10px;
+  }
+
+  hr {
+    border: 1px solid $hr-color;
+  }
+
+}

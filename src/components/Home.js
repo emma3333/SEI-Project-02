@@ -5,8 +5,9 @@ const Home = () => {
     <main>
       <section className="section">
         <div className="container">
-          <h1 className="title is-1">Music search</h1>
-          <h2 className="subtitle is-2">Look for your artists</h2>
+          <h1 className="title">Search for your favourite artist's albums</h1>
+          <h2 className="subtitle headingtitle">Powered by Deezer</h2>
+          <hr />
         </div>
       </section>
       <section>
