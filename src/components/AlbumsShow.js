@@ -48,6 +48,23 @@ class AlbumsShow extends React.Component {
               <h2 className="subtitle is-5">Genre: { this.state.album.genres.data.length > 0 ? this.state.album.genres.data[0].name : 'N/A' }</h2>
             </div>
           </div>
+
+          <div className="columns">
+            <div className="column is-half-desktop is-full-tablet is-full-mobile">
+              <h2 className="subtitle is-3 headingtitle">Tracklisting</h2>
+              <ul>
+                {this.state.album.tracks.data.map(track =>
+                  <li key={track.id}>
+                    <h4 className="title is-4">{track.title}</h4>
+                    <audio src={track.preview} controls />
+                  </li>)}
+              </ul>
+            </div>
+
+            <div className="column is-half-desktop is-full-tablet is-full-mobile">
+
+            </div>
+          </div>
         </div>
       </section>
     )
