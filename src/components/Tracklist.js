@@ -24,7 +24,10 @@ const Tracklist = (props) => {
             <ul>
 
               {props.location.state.tracks[0].map(track =>
-                <li key={track.id}>{track.title}</li>)}
+                <li key={track.id}>
+                  <h4 className="title is-4">{track.title}</h4>
+                  <audio src={track.preview} controls />
+                </li>)}
             </ul>
           </div>
         </div>

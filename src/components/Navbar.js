@@ -41,7 +41,6 @@ class Navbar extends React.Component {
 
           <div className="navbar-menu">
             <div className="navbar-start">
-              <Link to="/albums" className="navbar-item">Albums</Link>
             </div>
 
             <div className="navbar-end">
