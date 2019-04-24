@@ -45,7 +45,7 @@ class AlbumsShow extends React.Component {
               <h2 className="title is-4">Label: {this.state.album.label}</h2>
               <h2 className="title is-4">Number of tracks: {this.state.album.nb_tracks}</h2>
               <h2 className="title is-4">Release date: {this.state.album.release_date}</h2>
-              <h2 className="title is-4">Genre: { this.state.album.genres.data.length > 0 ? this.state.album.genres.data[0].name : '' }</h2>
+              <h2 className="title is-4">Genre: { this.state.album.genres.data.length > 0 ? this.state.album.genres.data[0].name : 'N/A' }</h2>
             </div>
           </div>
         </div>
