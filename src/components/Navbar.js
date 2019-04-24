@@ -62,7 +62,7 @@ class Navbar extends React.Component {
             </div>
 
             <div className="navbar-end">
-              <div className="navbar-item" id="logo"></div>
+              <a href="https://www.deezer.com/en/" target="_blank"><div className="navbar-item" id="logo"></div></a>
             </div>
           </div>
         </div>
