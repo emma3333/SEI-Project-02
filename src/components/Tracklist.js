@@ -12,7 +12,7 @@ const Tracklist = (props) => {
   return(
     <section className="section">
       <div className="container">
-        <h1 className="title is-3">{props.location.state.name} '{props.location.state.title}'</h1>
+        <h1 className="title is-3">{props.location.state.name} {props.location.state.title}</h1>
         <h2 className="subtitle is-5 headingtitle">Tracklisting</h2>
         <hr />
         <div className="columns">

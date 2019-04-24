@@ -23,7 +23,7 @@ class AlbumsShow extends React.Component {
     return (
       <section className="section">
         <div className="container">
-          <h1 className="title is-1">{this.state.album.artist.name} '{this.state.album.title}'</h1>
+          <h1 className="title is-1">{`${this.state.album.artist.name} '${this.state.album.title}'`}</h1>
           <hr />
           <div className="columns">
             <div className="column is-half-desktop is-full-tablet is-full-mobile">

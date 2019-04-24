@@ -41,7 +41,7 @@ class AlbumsIndex extends React.Component {
         <div className="container">
           <div className="columns is-multiline">
             {this.state.albums.map(album =>
-              <div key={album.id} className="column is-one-quarter-desktop is-one-third-tablet">
+              <div key={album.id} className="column is-one-third-desktop is-one-third-tablet">
                 <Link to={`/albums/${album.id}`}>
                   <h1 className="title is-4">{album.title}</h1>
                   <h2 className="subtitle is-5">{album.artist.name}</h2>
