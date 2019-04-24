@@ -11,55 +11,119 @@ $font-stack: Roboto, sans-serif;
 body {
   background-color: $background-color;
   min-height: 100vh;
-  //
-  // #home {
-  //   background-color: $hero-color;
-  //   height: 300px;
-  //   border-bottom: 2px solid $hr-color;
-  // }
-
 
   img {
     border-radius: 3px;
   }
 
   .featured {
-    padding-top: 4px;
+    padding-top: 2px;
   }
 
+
+
   #coldplay {
-    background-image: url('/src/assets/coldplay.jpeg');
+    background: rgba(215,44,136,0) url('/src/assets/coldplay.jpeg');
     height: 300px;
     border-radius: 4px;
     padding: 5px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    vertical-align: middle;
+    &:hover {
+      background:
+      linear-gradient(
+      rgba(215,44,136,.4),
+      rgba(215,44,136,.4)
+      ),
+      url('/src/assets/coldplay.jpeg');
+      letter-spacing: 5px;
+    }
+    div{
+      margin-top: 120px;
+      color: #d72c88;
+    }
   }
 
   #shakira {
-    background-image: url('/src/assets/shakira.jpg');
+    background: rgba(254,221,0, 0) url('/src/assets/shakira.jpg');
     height: 300px;
     background-size: cover;
     background-position: center;
     border-radius: 4px;
     padding: 5px;
-
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    vertical-align: middle;
+    &:hover {
+      background:
+      linear-gradient(
+      rgba(254,221,0, 0.4),
+      rgba(254,221,0, 0.4)
+      ),
+      url('/src/assets/shakira.jpg');
+      background-size: cover;
+      background-position: center;
+      letter-spacing: 5px;
+    }
+    div{
+      margin-top: 120px;
+      color: #fedd00;
+    }
   }
 
   #kanyewest {
-    background-image: url('/src/assets/kanyewest.jpeg');
+    background: rgba(64,180,230,0)  url('/src/assets/kanyewest.jpeg');
     height: 300px;
     background-size: 512px;
     background-position: center;
     border-radius: 4px;
     padding: 5px;
-
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    vertical-align: middle;
+    &:hover {
+      background:
+      linear-gradient(
+      rgba(64,180,230,0.4),
+      rgba(64,180,230,0.4)
+      ),
+      url('/src/assets/kanyewest.jpeg');
+      background-size: 512px;
+      background-position: center;
+      letter-spacing: 5px;
+      }
+    div{
+      margin-top: 120px;
+      color: #40b4e6;
+    }
   }
 
   #tameimpala {
-    background-image: url('/src/assets/tame-impala.jpg');
+    background: rgba(195,210,0,0) url('/src/assets/tame-impala.jpg');
     height: 300px;
     border-radius: 4px;
     padding: 5px;
-
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    vertical-align: middle;
+    &:hover {
+      background:
+      linear-gradient(
+      rgba(195,210,0,0.4),
+      rgba(195,210,0,0.4)
+      ),
+      url('/src/assets/tame-impala.jpg');
+      letter-spacing: 5px;
+    }
+    div{
+      margin-top: 120px;
+      color: #c3d200;
+    }
   }
 
   .headingtitle {
