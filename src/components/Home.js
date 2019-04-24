@@ -15,10 +15,10 @@ const Home = () => {
       <section className="section">
         <div className="container">
           <div className="columns is-multiline">
-            <Link to="/search/coldplay"><div className="column is-half-desktop is-full-mobile is-half-tablet">COLDPLAY</div> </Link>
-            <Link to="/search/kanyewest"><div className="column is-half-desktop is-full-mobile is-half-tablet">KANYE WEST</div> </Link>
-            <Link to="/search/shakira"><div className="column is-half-desktop is-full-mobile is-half-tablet">SHAKIRA</div> </Link>
-            <Link to="/search/tameimpala"><div className="column is-half-desktop is-full-mobile is-half-tablet">TAME IMPALA</div> </Link>
+            <Link to="/search/coldplay" className="column is-half-desktop is-full-mobile is-half-tablet"><div>COLDPLAY</div> </Link>
+            <Link to="/search/kanyewest" className="column is-half-desktop is-full-mobile is-half-tablet"><div>KANYE WEST</div> </Link>
+            <Link to="/search/shakira" className="column is-half-desktop is-full-mobile is-half-tablet"><div>SHAKIRA</div> </Link>
+            <Link to="/search/tameimpala" className="column is-half-desktop is-full-mobile is-half-tablet"><div>TAME IMPALA</div> </Link>
           </div>
         </div>
       </section>
