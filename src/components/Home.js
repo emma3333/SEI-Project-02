@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom'
 const Home = () => {
   return (
     <main>
-      <section className="section">
+      <section className="section home">
         <div className="container">
-          <h1 className="title">{'Search for your favourite artist\'s album'}</h1>
+          <h1 className="title">{'Search by artist..'}</h1>
           <h2 className="subtitle headingtitle">Powered by Deezer</h2>
           <hr />
         </div>
@@ -15,10 +15,10 @@ const Home = () => {
       <section className="section featured">
         <div className="container">
           <div className="columns is-multiline is-vcentered">
-            <Link to="/search/coldplay" className="column is-half-desktop is-full-mobile is-half-tablet is-vcentered" id="coldplay"><div>COLDPLAY</div> </Link>
-            <Link to="/search/kanyewest" className="column is-half-desktop is-full-mobile is-half-tablet" id="kanyewest"><div>KANYE WEST</div> </Link>
-            <Link to="/search/shakira" className="column is-half-desktop is-full-mobile is-half-tablet" id="shakira"><div>SHAKIRA</div> </Link>
-            <Link to="/search/tameimpala" className="column is-half-desktop is-full-mobile is-half-tablet" id="tameimpala"><div>TAME IMPALA</div> </Link>
+            <Link to="/search/coldplay" className="column is-half-desktop is-full-mobile is-half-tablet is-vcentered" id="art-one"><div>COLDPLAY</div> </Link>
+            <Link to="/search/kanyewest" className="column is-half-desktop is-full-mobile is-half-tablet" id="art-two"><div>KANYE WEST</div> </Link>
+            <Link to="/search/shakira" className="column is-half-desktop is-full-mobile is-half-tablet" id="art-three"><div>SHAKIRA</div> </Link>
+            <Link to="/search/tameimpala" className="column is-half-desktop is-full-mobile is-half-tablet" id="art-four"><div>TAME IMPALA</div> </Link>
           </div>
         </div>
       </section>

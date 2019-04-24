@@ -5,6 +5,19 @@ $subtitle-color: #40b4e6;
 $hr-color: #d72c88;
 $hero-color: #ffffff;
 $home-color: #bbd9ea;
+$art-one-color-hex: #d72c88;
+$art-two-color-hex: #40b4e6;
+$art-three-color-hex: #fedd00;
+$art-four-color-hex: #c3d200;
+$art-one-color-rgba: rgba(215,44,136,0);
+$art-one-color-rgba-hover: rgba(215,44,136,.4);
+$art-two-color-rgba: rgba(64,180,230,0);
+$art-two-color-rgba-hover: rgba(64,180,230,0.4);
+$art-three-color-rgba: rgba(254,221,0, 0);
+$art-three-color-rgba-hover: rgba(254,221,0, 0.4);
+$art-four-color-rgba: rgba(195,210,0,0);
+$art-four-color-rgba-hover: rgba(195,210,0,0.4);
+
 $font-stack: Roboto, sans-serif;
 
 
@@ -20,10 +33,12 @@ body {
     padding-top: 2px;
   }
 
+  .home {
+    padding: 25px;
+  }
 
-
-  #coldplay {
-    background: rgba(215,44,136,0) url('/src/assets/coldplay.jpeg');
+  #art-one {
+    background: $art-one-color-rgba url('/src/assets/coldplay.jpeg');
     height: 300px;
     border-radius: 4px;
     padding: 5px;
@@ -34,20 +49,48 @@ body {
     &:hover {
       background:
       linear-gradient(
-      rgba(215,44,136,.4),
-      rgba(215,44,136,.4)
+      $art-one-color-rgba-hover,
+      $art-one-color-rgba-hover
       ),
       url('/src/assets/coldplay.jpeg');
       letter-spacing: 5px;
     }
     div{
       margin-top: 120px;
-      color: #d72c88;
+      color: $art-one-color-hex;
     }
   }
 
-  #shakira {
-    background: rgba(254,221,0, 0) url('/src/assets/shakira.jpg');
+  #art-two {
+    background: $art-two-color-rgba url('/src/assets/kanyewest.jpeg');
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    padding: 5px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    vertical-align: middle;
+    &:hover {
+      background:
+      linear-gradient(
+      $art-two-color-rgba-hover,
+      $art-two-color-rgba-hover
+      ),
+      url('/src/assets/kanyewest.jpeg');
+      background-position: center;
+      background-repeat: no-repeat;
+      letter-spacing: 5px;
+      }
+    div{
+      margin-top: 120px;
+      color: $art-two-color-hex;
+    }
+  }
+
+  #art-three {
+    background: $art-three-color-rgba url('/src/assets/shakira.jpg');
     height: 300px;
     background-size: cover;
     background-position: center;
@@ -60,8 +103,8 @@ body {
     &:hover {
       background:
       linear-gradient(
-      rgba(254,221,0, 0.4),
-      rgba(254,221,0, 0.4)
+      $art-three-color-rgba-hover,
+      $art-three-color-rgba-hover
       ),
       url('/src/assets/shakira.jpg');
       background-size: cover;
@@ -70,40 +113,12 @@ body {
     }
     div{
       margin-top: 120px;
-      color: #fedd00;
+      color: $art-three-color-hex;
     }
   }
 
-  #kanyewest {
-    background: rgba(64,180,230,0)  url('/src/assets/kanyewest.jpeg');
-    height: 300px;
-    background-size: 512px;
-    background-position: center;
-    border-radius: 4px;
-    padding: 5px;
-    text-align: center;
-    font-size: 35px;
-    font-weight: bold;
-    vertical-align: middle;
-    &:hover {
-      background:
-      linear-gradient(
-      rgba(64,180,230,0.4),
-      rgba(64,180,230,0.4)
-      ),
-      url('/src/assets/kanyewest.jpeg');
-      background-size: 512px;
-      background-position: center;
-      letter-spacing: 5px;
-      }
-    div{
-      margin-top: 120px;
-      color: #40b4e6;
-    }
-  }
-
-  #tameimpala {
-    background: rgba(195,210,0,0) url('/src/assets/tame-impala.jpg');
+  #art-four {
+    background: $art-four-color-rgba url('/src/assets/tame-impala.jpg');
     height: 300px;
     border-radius: 4px;
     padding: 5px;
@@ -114,15 +129,15 @@ body {
     &:hover {
       background:
       linear-gradient(
-      rgba(195,210,0,0.4),
-      rgba(195,210,0,0.4)
+      $art-four-color-rgba-hover,
+      $art-four-color-rgba-hover
       ),
       url('/src/assets/tame-impala.jpg');
       letter-spacing: 5px;
     }
     div{
       margin-top: 120px;
-      color: #c3d200;
+      color: $art-four-color-hex;
     }
   }
 

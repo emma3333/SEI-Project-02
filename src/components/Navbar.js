@@ -48,7 +48,7 @@ class Navbar extends React.Component {
                 <form onSubmit={this.handleSubmit}>
                   <div className="field has-addons">
                     <div className="control">
-                      <input className="input is-small is-full-width" type="search" onChange={this.handleSearch} placeholder="Artist Name..." />
+                      <input className="input is-small is-full-width" type="search" onChange={this.handleSearch} placeholder="Search music" />
                     </div>
                     <div className="control">
                       <button className="button is-light is-small is-outlined">
