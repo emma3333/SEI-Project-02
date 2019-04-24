@@ -23,6 +23,45 @@ body {
     border-radius: 3px;
   }
 
+  .featured {
+    padding-top: 4px;
+  }
+
+  #coldplay {
+    background-image: url('/src/assets/coldplay.jpeg');
+    height: 300px;
+    border-radius: 4px;
+    padding: 5px;
+  }
+
+  #shakira {
+    background-image: url('/src/assets/shakira.jpg');
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px;
+    padding: 5px;
+
+  }
+
+  #kanyewest {
+    background-image: url('/src/assets/kanyewest.jpeg');
+    height: 300px;
+    background-size: 512px;
+    background-position: center;
+    border-radius: 4px;
+    padding: 5px;
+
+  }
+
+  #tameimpala {
+    background-image: url('/src/assets/tame-impala.jpg');
+    height: 300px;
+    border-radius: 4px;
+    padding: 5px;
+
+  }
+
   .headingtitle {
     letter-spacing: 3px;
     color: $subtitle-color;
@@ -49,6 +88,10 @@ body {
 
   hr {
     border: 1px solid $hr-color;
+  }
+
+  .input {
+    width: 500px;
   }
 
 }

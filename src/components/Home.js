@@ -12,13 +12,13 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section featured">
         <div className="container">
           <div className="columns is-multiline">
-            <Link to="/search/coldplay" className="column is-half-desktop is-full-mobile is-half-tablet"><div>COLDPLAY</div> </Link>
-            <Link to="/search/kanyewest" className="column is-half-desktop is-full-mobile is-half-tablet"><div>KANYE WEST</div> </Link>
-            <Link to="/search/shakira" className="column is-half-desktop is-full-mobile is-half-tablet"><div>SHAKIRA</div> </Link>
-            <Link to="/search/tameimpala" className="column is-half-desktop is-full-mobile is-half-tablet"><div>TAME IMPALA</div> </Link>
+            <Link to="/search/coldplay" className="column is-half-desktop is-full-mobile is-half-tablet" id="coldplay"><div>COLDPLAY</div> </Link>
+            <Link to="/search/kanyewest" className="column is-half-desktop is-full-mobile is-half-tablet" id="kanyewest"><div>KANYE WEST</div> </Link>
+            <Link to="/search/shakira" className="column is-half-desktop is-full-mobile is-half-tablet" id="shakira"><div>SHAKIRA</div> </Link>
+            <Link to="/search/tameimpala" className="column is-half-desktop is-full-mobile is-half-tablet" id="tameimpala"><div>TAME IMPALA</div> </Link>
           </div>
         </div>
       </section>

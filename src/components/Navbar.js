@@ -40,15 +40,15 @@ class Navbar extends React.Component {
           </div>
 
           <div className="navbar-menu">
-            <div className="navbar-start">
+            <div className="navbar-start is-full-width">
               <Link to="/" className="navbar-item">Home</Link>
 
-              <div className="navbar-item">
+              <div className="navbar-item is-full-width">
 
                 <form onSubmit={this.handleSubmit}>
                   <div className="field has-addons">
                     <div className="control">
-                      <input className="input is-small" type="search" onChange={this.handleSearch} placeholder="Artist Name..." />
+                      <input className="input is-small is-full-width" type="search" onChange={this.handleSearch} placeholder="Artist Name..." />
                     </div>
                     <div className="control">
                       <button className="button is-light is-small is-outlined">
