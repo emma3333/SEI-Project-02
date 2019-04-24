@@ -34,7 +34,6 @@ class AlbumsIndex extends React.Component {
     }
   }
 
-
   render() {
     if(!this.state.albums) return <Loading />
     return(
@@ -55,7 +54,6 @@ class AlbumsIndex extends React.Component {
           </div>
         </div>
       </section>
-
     )
   }
 }

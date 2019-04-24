@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link, withRouter } from 'react-router-dom'
 
-
 class Navbar extends React.Component {
 
   constructor(props) {
@@ -23,7 +22,6 @@ class Navbar extends React.Component {
 
     this.props.history.push(`/search/${this.state.data}`)
   }
-
 
   render() {
     return (
@@ -62,7 +60,7 @@ class Navbar extends React.Component {
             </div>
 
             <div className="navbar-end">
-              <a href="https://www.deezer.com/en/" target="_blank"><div className="navbar-item" id="logo"></div></a>
+              <a href="https://www.deezer.com/en/" rel="noopener noreferrer" target="_blank"><div className="navbar-item" id="logo"></div></a>
             </div>
           </div>
         </div>
@@ -70,6 +68,5 @@ class Navbar extends React.Component {
     )
   }
 }
-
 
 export default withRouter(Navbar)
