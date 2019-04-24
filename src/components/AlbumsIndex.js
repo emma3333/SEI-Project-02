@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Loading from './Loading'
 import axios from 'axios'
 
 class AlbumsIndex extends React.Component {
@@ -35,7 +36,7 @@ class AlbumsIndex extends React.Component {
 
 
   render() {
-    if(!this.state.albums) return null
+    if(!this.state.albums) return <Loading />
     return(
       <section className="section">
         <div className="container">
