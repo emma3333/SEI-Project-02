@@ -51,8 +51,8 @@ class Navbar extends React.Component {
                       <input className="input is-small is-full-width" type="search" onChange={this.handleSearch} placeholder="Search music" />
                     </div>
                     <div className="control">
-                      <button className="button is-light is-small is-outlined">
-                    Search
+                      <button className="button is-light is-small">
+                        <i className="fas fa-caret-right"></i>
                       </button>
                     </div>
                   </div>
