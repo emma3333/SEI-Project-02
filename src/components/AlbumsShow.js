@@ -1,6 +1,5 @@
 import React from 'react'
 import axios from 'axios'
-import { Link } from 'react-router-dom'
 class AlbumsShow extends React.Component {
   constructor(props) {
     super(props)
@@ -27,18 +26,9 @@ class AlbumsShow extends React.Component {
           <hr />
           <div className="columns">
             <div className="column is-half-desktop is-full-tablet is-full-mobile">
-              <Link to={{
-                pathname: `/albums/${this.state.album.id}/tracklist`,
-                state: {
-                  cover: [this.state.album.cover_medium],
-                  title: [this.state.album.title],
-                  tracks: [this.state.album.tracks.data]
-                }
-              }}>
-                <figure className="image">
-                  <img src={this.state.album.cover_medium} alt={this.state.album.title} />
-                </figure>
-              </Link>
+              <figure className="image">
+                <img src={this.state.album.cover_medium} alt={this.state.album.title} />
+              </figure>
             </div>
             <div className="column is-half-desktop is-full-tablet is-full-mobile">
               <h2 className="subtitle is-5">Artist: {this.state.album.artist.name}</h2>
@@ -51,7 +41,7 @@ class AlbumsShow extends React.Component {
 
           <div className="columns">
             <div className="column is-half-desktop is-full-tablet is-full-mobile">
-              <h2 className="subtitle is-3 headingtitle">Tracklisting</h2>
+              <h2 className="subtitle is-4 headingtitle">Tracklisting</h2>
               <ul>
                 {this.state.album.tracks.data.map(track =>
                   <li key={track.id}>

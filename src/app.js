@@ -6,7 +6,6 @@ import Navbar from './components/Navbar'
 import Home from './components/Home'
 import AlbumsIndex from './components/AlbumsIndex'
 import AlbumsShow from './components/AlbumsShow'
-import Tracklist from './components/Tracklist'
 
 import 'bulma'
 import './style.scss'
@@ -19,7 +18,6 @@ class App extends React.Component {
           <Navbar />
           <Switch>
             <Route path="/search/:query" component={AlbumsIndex} />
-            <Route path="/albums/:id/tracklist" component={Tracklist} />
             <Route path="/albums/:id" component={AlbumsShow} />
             <Route path="/" component={Home} />
           </Switch>
