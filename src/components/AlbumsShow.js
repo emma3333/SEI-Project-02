@@ -1,5 +1,6 @@
 import React from 'react'
 import axios from 'axios'
+
 class AlbumsShow extends React.Component {
   constructor(props) {
     super(props)
@@ -34,7 +35,7 @@ class AlbumsShow extends React.Component {
               <h2 className="subtitle is-5">Label: {this.state.album.label}</h2>
               <h2 className="subtitle is-5">Number of tracks: {this.state.album.nb_tracks}</h2>
               <h2 className="subtitle is-5">Release date: {this.state.album.release_date}</h2>
-              <h2 className="subtitle is-5">Genre: { this.state.album.genres.data.length > 0 ? this.state.album.genres.data[0].name : 'N/A' }</h2>
+              <h2 className="subtitle is-5">Genre: {this.state.album.genres.data.length > 0 ? this.state.album.genres.data[0].name : 'N/A' }</h2>
             </div>
           </div>
 
@@ -59,6 +60,5 @@ class AlbumsShow extends React.Component {
     )
   }
 }
-
 
 export default AlbumsShow

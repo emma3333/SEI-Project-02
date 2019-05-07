@@ -38,7 +38,7 @@ body {
   }
 
   #art-one {
-    background: $art-one-color-rgba url('/src/assets/coldplay.jpeg');
+    background: $art-one-color-rgba url('assets/coldplay.jpeg');
     height: 250px;
     border-radius: 4px;
     padding: 5px;
@@ -52,7 +52,7 @@ body {
       $art-one-color-rgba-hover,
       $art-one-color-rgba-hover
       ),
-      url('/src/assets/coldplay.jpeg');
+      url('assets/coldplay.jpeg');
       letter-spacing: 5px;
     }
     div{
@@ -62,7 +62,7 @@ body {
   }
 
   #art-two {
-    background: $art-two-color-rgba url('/src/assets/kanyewest.jpeg');
+    background: $art-two-color-rgba url('assets/kanyewest.jpeg');
     height: 250px;
     background-position: center;
     background-repeat: no-repeat;
@@ -78,7 +78,7 @@ body {
       $art-two-color-rgba-hover,
       $art-two-color-rgba-hover
       ),
-      url('/src/assets/kanyewest.jpeg');
+      url('assets/kanyewest.jpeg');
       background-position: center;
       background-repeat: no-repeat;
       letter-spacing: 5px;
@@ -90,7 +90,7 @@ body {
   }
 
   #art-three {
-    background: $art-three-color-rgba url('/src/assets/shakira.jpg');
+    background: $art-three-color-rgba url('assets/shakira.jpg');
     height: 250px;
     background-size: cover;
     background-position: center;
@@ -106,7 +106,7 @@ body {
       $art-three-color-rgba-hover,
       $art-three-color-rgba-hover
       ),
-      url('/src/assets/shakira.jpg');
+      url('assets/shakira.jpg');
       background-size: cover;
       background-position: center;
       letter-spacing: 5px;
@@ -118,7 +118,7 @@ body {
   }
 
   #art-four {
-    background: $art-four-color-rgba url('/src/assets/tame-impala.jpg');
+    background: $art-four-color-rgba url('assets/tame-impala.jpg');
     height: 250px;
     border-radius: 4px;
     padding: 5px;
@@ -133,7 +133,7 @@ body {
       $art-four-color-rgba-hover,
       $art-four-color-rgba-hover
       ),
-      url('/src/assets/tame-impala.jpg');
+      url('assets/tame-impala.jpg');
       letter-spacing: 5px;
       background-position: center;
     }
@@ -162,7 +162,7 @@ body {
   }
 
   #logo {
-      background-image: url('/src/assets/Deezerlogo.png');
+      background-image: url('assets/Deezerlogo.png');
       background-size: contain;
       width: 220px;
       height: 30px;
