@@ -23,7 +23,7 @@
 * The React app must have at least one classical and one functional
 * The app should include a router with several pages
 * Have semantically clean HTML
-* Be deployed online and accessible to the public.
+* Be deployed online and accessible to the public
 
 ### Timeframe
 * 2 days
