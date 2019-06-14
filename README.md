@@ -34,11 +34,11 @@
 
 In the group of three we decided we wanted to use a music or events API so after looking into numerous API documentations, we decided to use Deezer's API. Once we had an idea of what we wanted our frontend to consist of, we began by building components for the home page, navbar, album index and finally album show page.
 
-To begin with we hard coded everything so the only artist displayed was Coldplay. Once we had this working we worked on the search bar (see below in challenges for more info on this).
+To begin with we hard coded everything so the only artist displayed was Coldplay. Once we had this working we worked on the search bar to return any artist the user searches for (see below in challenges for more info on this).
 
 ![Search results](https://user-images.githubusercontent.com/35655626/59536841-c29ce900-8eec-11e9-8b0c-839b65ec30cf.png)
 
-Finally, we worked on the styling, using SCSS to complement the basic Bulma styling.
+We then worked on the styling, using SCSS to complement the basic Bulma styling. Finally, we added a loading gif in a loading component.
 
 The whole project was coded together on one laptop, something I really enjoyed and found particularly beneficial learning off one another.
 
