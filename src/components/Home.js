@@ -16,9 +16,9 @@ const Home = () => {
         <div className="container">
           <div className="columns is-multiline is-vcentered">
             <Link to="/search/coldplay" className="column is-half-desktop is-full-mobile is-half-tablet is-vcentered" id="art-one"><div>COLDPLAY</div> </Link>
-            <Link to="/search/kanyewest" className="column is-half-desktop is-full-mobile is-half-tablet" id="art-two"><div>KANYE WEST</div> </Link>
+            <Link to="/search/kanye west" className="column is-half-desktop is-full-mobile is-half-tablet" id="art-two"><div>KANYE WEST</div> </Link>
             <Link to="/search/shakira" className="column is-half-desktop is-full-mobile is-half-tablet" id="art-three"><div>SHAKIRA</div> </Link>
-            <Link to="/search/tameimpala" className="column is-half-desktop is-full-mobile is-half-tablet" id="art-four"><div>TAME IMPALA</div> </Link>
+            <Link to="/search/tame impala" className="column is-half-desktop is-full-mobile is-half-tablet" id="art-four"><div>TAME IMPALA</div> </Link>
           </div>
         </div>
       </section>
